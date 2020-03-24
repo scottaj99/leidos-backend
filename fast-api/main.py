@@ -17,20 +17,20 @@ It uses the models to interact with the database and calls on methods called in 
 
 #Declare the middleware and urls which can interavt with the middleware
 app = FastAPI()
-origins = [
-    "http://localhost:19000",
-    "http://localhost:19006",
-    "http://localhost:8000",
-    "http://192.168.1.66:19006"
-]
-#Configure apps middleware settings
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# origins = [
+#     "http://localhost:19000",
+#     "http://localhost:19006",
+#     "http://localhost:8000",
+#     "http://192.168.1.66:19006"
+# ]
+# #Configure apps middleware settings
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=origins,
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 #Create all models and connect to db
 models.Base.metadata.create_all(bind=engine)
 
