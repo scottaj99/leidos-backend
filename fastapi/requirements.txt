@@ -32,7 +32,7 @@ starlette==0.12.9
 tweepy==3.8.0
 urllib3==1.25.8
 uvicorn==0.11.2
-websockets==8.1
+websockets==9.1
 wrapt==1.11.2
   
 astroid==2.3.3
@@ -49,5 +49,5 @@ pylint==2.4.4
 six==1.14.0
 starlette==0.12.9
 uvicorn==0.11.2
-websockets==8.1
+websockets==9.1
 wrapt==1.11.2
